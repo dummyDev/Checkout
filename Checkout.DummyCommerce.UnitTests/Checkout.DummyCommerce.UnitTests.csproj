@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+    <PackageReference Include="NSubstitute" Version="3.1.0" />
+    <PackageReference Include="NUnit" Version="3.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Checkout.DummyCommerce.DataAccessLayer\Checkout.DummyCommerce.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\Checkout.DummyCommerce.Domain\Checkout.DummyCommerce.Domain.csproj" />
+    <ProjectReference Include="..\Checkout.DummyCommerce.RestApi\Checkout.DummyCommerce.RestApi.csproj" />
+  </ItemGroup>
+
+</Project>
